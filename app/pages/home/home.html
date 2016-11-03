@@ -1,0 +1,18 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Demo Project
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+      
+    <ion-card *ngFor="let repo of foundRepos"   >
+        <ion-card-header>
+             
+           
+        </ion-card-header>
+        <ion-card-content (click)="goToDetails(repo.loan_id)">
+          Loan Id- {{ repo.loan_id }}, Bucket- {{ repo.bucket }}
+        </ion-card-content>
+    </ion-card>
+</ion-content>
